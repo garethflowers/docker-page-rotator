@@ -13,7 +13,7 @@ function showUrl(idx) {
         var next = ++idx % urls.length;
         setTimeout(function() {
             showUrl(next);
-        }, 5000);
+        }, <?php echo $config['delay']; ?> );
     };
     f.src = urls[idx];
 }
