@@ -10,7 +10,7 @@
 
     <body>
 
-        <iframe id="frame" seamless="seamless" scrolling="no">
+        <iframe id="frame" sandbox="allow-scripts allow-same-origin">
         </iframe>
 
         <script src="/assets/rotator.php"></script>
