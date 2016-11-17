@@ -8,5 +8,7 @@ return [
     // List of URL's
     'urls' => [
         'http://test',
-    ]
+    ],
+    // Custom styles
+    'styles' = '',
 ];
