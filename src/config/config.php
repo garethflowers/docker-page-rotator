@@ -10,5 +10,5 @@ return [
         'http://test',
     ],
     // Custom styles
-    'styles' = '',
+    'styles' => '',
 ];
