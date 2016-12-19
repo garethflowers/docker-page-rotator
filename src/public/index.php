@@ -5,10 +5,9 @@
         <title><?php echo $config['sitename']; ?></title>
         <base href="/">
         <link href="/assets/styles.css" rel="stylesheet">
+        <script src="/assets/rotator.php" async></script>
         <style><?php echo $config['styles']; ?></style>
     </head>
     <body>
-        <iframe id="frame" sandbox="allow-scripts allow-same-origin"></iframe>
-        <script src="/assets/rotator.php" async></script>
     </body>
 </html>
