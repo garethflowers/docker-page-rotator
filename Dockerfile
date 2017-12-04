@@ -1,4 +1,4 @@
-FROM php:7.1.9-alpine
+FROM php:7.2.0-alpine
 
 CMD [ "php", "-t", "public", "-S", "0.0.0.0:80", "/usr/src/app/common/router.php" ]
 EXPOSE 80
