@@ -7,7 +7,8 @@ return [
     'delay' => 10,
     // List of URL's
     'urls' => [
-        'http://test',
+        'http://localhost/demo/page-1.html',
+        'http://localhost/demo/page-2.html',
     ],
     // Custom styles
     'styles' => '',

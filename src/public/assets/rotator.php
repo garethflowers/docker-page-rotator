@@ -4,23 +4,24 @@ header("Content-Type: application/javascript");
 require dirname( dirname( __DIR__ ) ) . '/common/common.php';
 ?>
 
-var urls = [ <?php echo $config['urlList']; ?> ];
+const urls = [ <?php echo $config['urlList']; ?> ];
 
 showUrl = function(idx) {
-    var frame = document.createElement('iframe');
-    frame.setAttribute('sandbox', 'allow-scripts allow-same-origin');
-    frame.setAttribute('src', urls[idx]);
+    const frame = document.createElement('iframe');
+    frame.sandbox = 'allow-scripts allow-same-origin';
+    frame.className = 'page-rotator-frame';
+    frame.src = urls[idx];
 
     frame.onload = function() {
-        this.setAttribute('class','visible');
+        this.className += ' visible';
 
-        var frames = document.getElementsByTagName('iframe');
+        const frames = document.getElementsByClassName('page-rotator-frame');
 
         if (frames.length > 1) {
             document.body.removeChild(frames[0]);
         }
 
-        var next = ++idx % urls.length;
+        const next = ++idx % urls.length;
 
         setTimeout(function() {
             showUrl(next);
