@@ -1,0 +1,15 @@
+{
+    "authors": [
+        {
+            "email": "garethflowers@me.com",
+            "name": "Gareth Flowers"
+        }
+    ],
+    "description": "Page Rotating Website",
+    "license": "MIT",
+    "name": "garethflowers/page-rotator",
+    "scripts": {
+        "docker-build": "docker build -t garethflowers/page-rotator ."
+    },
+    "type": "project"
+}
