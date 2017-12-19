@@ -12,4 +12,6 @@ return [
     ],
     // Custom styles
     'styles' => '',
+    // Custom body
+    'body' => '',
 ];
