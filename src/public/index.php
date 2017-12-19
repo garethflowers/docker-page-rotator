@@ -9,5 +9,6 @@
         <style><?php echo $config['styles']; ?></style>
     </head>
     <body>
+        <?php echo $config['body']; ?>
     </body>
 </html>
