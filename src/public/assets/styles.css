@@ -6,9 +6,12 @@ html body, iframe.page-rotator-frame {
     margin: 0;
     overflow: hidden;
     padding: 0;
+    width: 100vw;
+}
+
+iframe.page-rotator-frame {
     position: absolute;
     visibility: hidden;
-    width: 100vw;
 }
 
 iframe.page-rotator-frame.visible {
