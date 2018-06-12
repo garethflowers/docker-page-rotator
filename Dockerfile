@@ -4,7 +4,7 @@ ARG BUILD_DATE
 ARG VCS_REF
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
-	org.label-schema.docker.cmd="docker run -d -p 80:80 -v $PWD:/usr/src/app/config garethflowers/page-rotator" \
+	org.label-schema.docker.cmd="docker run --detach --publish 80:80 --volume $PWD:/usr/src/app/config garethflowers/page-rotator" \
 	org.label-schema.description="Page Rotator" \
 	org.label-schema.name="page-rotator" \
 	org.label-schema.schema-version="1.0" \
