@@ -1,0 +1,15 @@
+language: bash
+
+addons:
+  apt:
+    update: true
+
+services:
+  - docker
+
+install:
+  - docker build -t page-rotator .
+  - docker run -d -p 80:80 page-rotator
+
+script:
+  - wget http://localhost
