@@ -13,7 +13,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 	org.label-schema.vendor="garethflowers" \
 	org.label-schema.version="1.0.0"
 
-CMD [ "php", "-t", "public", "-S", "0.0.0.0:80", "/usr/src/app/common/router.php" ]
+CMD [ "php", "--docroot", "public", "--server", "0.0.0.0:80", "/usr/src/app/common/router.php" ]
 EXPOSE 80
 HEALTHCHECK CMD wget --spider http://localhost || exit 1
 VOLUME [ "/usr/src/app/config" ]
