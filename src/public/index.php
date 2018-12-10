@@ -4,9 +4,8 @@
 
 <head>
 	<title><?php echo $config['sitename']; ?></title>
-	<base href="/">
-	<link href="/assets/styles.css" rel="stylesheet">
-	<script src="/assets/rotator.php" async></script>
+	<link href="assets/styles.css" rel="stylesheet">
+	<script src="assets/rotator.php" async></script>
 	<style><?php echo $config['styles']; ?></style>
 </head>
 
