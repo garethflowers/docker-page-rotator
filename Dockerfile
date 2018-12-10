@@ -11,7 +11,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 	org.label-schema.vcs-ref=$VCS_REF \
 	org.label-schema.vcs-url="https://github.com/garethflowers/docker-page-rotator" \
 	org.label-schema.vendor="garethflowers" \
-	org.label-schema.version="1.0.0"
+	org.label-schema.version=$CACHE_TAG
 
 CMD [ "php", "--docroot", "public", "--server", "0.0.0.0:80", "/usr/src/app/common/router.php" ]
 EXPOSE 80
