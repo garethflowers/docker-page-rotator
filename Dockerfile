@@ -1,6 +1,7 @@
 FROM php:7.2.9-alpine
 
 ARG BUILD_DATE
+ARG CACHE_TAG
 ARG VCS_REF
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
