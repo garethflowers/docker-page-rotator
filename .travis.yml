@@ -2,14 +2,18 @@ language: bash
 
 addons:
   apt:
+    packages:
+      - jq
     update: true
 
 services:
   - docker
 
 install:
-  - docker build --tag page-rotator .
-  - docker run --detach --publish 80:80 page-rotator
+  - export DOCKERFILE_PATH=Dockerfile
+  - export IMAGE_NAME=page-rotator
+  - source hooks/build
+  - docker run --detach --publish 80:80 $IMAGE_NAME
 
 script:
   - wget http://localhost
