@@ -1,4 +1,6 @@
-html body, iframe.page-rotator-frame {
+html,
+body,
+iframe.page-rotator-frame {
 	background-color: #000;
 	border: 0;
 	display: block;
