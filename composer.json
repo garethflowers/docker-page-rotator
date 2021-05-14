@@ -10,7 +10,8 @@
 	"license": "MIT",
 	"name": "garethflowers/page-rotator",
 	"scripts": {
-		"build": "docker build --tag garethflowers/page-rotator ."
+		"build": "docker build -t garethflowers/page-rotator .",
+		"run": "docker run --rm -p 80:80 -v $PWD/src:/usr/src/app garethflowers/page-rotator"
 	},
 	"support": {
 		"issues": "https://github.com/garethflowers/page-rotator/issues",
