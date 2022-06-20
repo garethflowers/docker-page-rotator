@@ -1,0 +1,11 @@
+services:
+ page-rotator:
+    build: ..
+    command: "php -v"
+    container_name: "page-rotator"
+    image: "garethflowers/page-rotator"
+    ports:
+      - "80:80/tcp"
+networks:
+  default:
+    driver: bridge
